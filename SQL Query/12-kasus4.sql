@@ -1,0 +1,2 @@
+# Nominal rata-rata transaksi yang dilakukan oleh pelanggan dalam 1 bulan terakhir.
+SELECT user_id, avg(total_price) FROM (SELECT * FROM orders where datediff(date, curdate())<31) as orders group by user_id;

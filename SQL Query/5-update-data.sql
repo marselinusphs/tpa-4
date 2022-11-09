@@ -1,0 +1,1 @@
+UPDATE `users` SET `email`='dena123@gmail.com' WHERE `email`='dena@gmail.com'
